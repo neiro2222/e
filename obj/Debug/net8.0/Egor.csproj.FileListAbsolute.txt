@@ -1,0 +1,14 @@
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\bin\Debug\net8.0\Egor.exe
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\bin\Debug\net8.0\Egor.deps.json
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\bin\Debug\net8.0\Egor.runtimeconfig.json
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\bin\Debug\net8.0\Egor.dll
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\bin\Debug\net8.0\Egor.pdb
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.AssemblyInfoInputs.cache
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.AssemblyInfo.cs
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.csproj.CoreCompileInputs.cache
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.dll
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\refint\Egor.dll
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.pdb
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.genruntimeconfig.cache
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\ref\Egor.dll
