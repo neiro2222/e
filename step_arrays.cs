@@ -18,7 +18,7 @@ class Step_arrays {
             }
         } else 
         {
-            Random_init();
+            _Random_init();
         }
 
         double all_size = 0;
@@ -33,7 +33,7 @@ class Step_arrays {
 
     }
     
-    private void Random_init() {
+    private void _Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
         for (int i = 0; i < array.Length; i++) {

@@ -17,7 +17,7 @@ class D2_arrays {
                 }
             }
         } else {
-            Random_init(N, M);
+            _Random_init(N, M);
         }
 
         double sum = 0;
@@ -29,7 +29,7 @@ class D2_arrays {
         average = sum / (array.Length);
     }
     
-    private void Random_init(int n, int m) {
+    private void _Random_init(int n, int m) {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
         for (int i = 0; i < n; i++) {

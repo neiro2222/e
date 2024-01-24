@@ -11,7 +11,7 @@ class D1_arrays {
                 a[i] = int.Parse(Console.ReadLine());
             }
         } else {
-            Random_init();
+            _Random_init();
         }
 
         double sum = 0;
@@ -21,7 +21,7 @@ class D1_arrays {
         average = sum / a.Length;
     }
     
-    private void Random_init() {
+    private void _Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
         for (int i = 0; i < a.Length; i++) {
