@@ -12,3 +12,4 @@ C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\
 C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.pdb
 C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.genruntimeconfig.cache
 C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\ref\Egor.dll
+C:\Users\rdsj8\OneDrive\Рабочий стол\c#\HW_3_1\Egor\obj\Debug\net8.0\Egor.sourcelink.json

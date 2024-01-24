@@ -1,10 +1,10 @@
 using System;
-class step_arrays {
-    private int[][] Array;
+class Step_arrays {
+    private int[][] array;
     private double average;
     
-    public step_arrays(int N, bool flag) {
-        Array = new int[N][];
+    public Step_arrays(int N, bool flag) {
+        array = new int[N][];
         if (flag)
         {
             for (int i = 0; i < N; i++) {
@@ -18,44 +18,44 @@ class step_arrays {
             }
         } else 
         {
-            random_init();
+            Random_init();
         }
 
         double all_size = 0;
-        for (int i = 0; i < Array.Length; i++) {
-            int m = Array[i].Length;
+        for (int i = 0; i < array.Length; i++) {
+            int m = array[i].Length;
             all_size += m;
             for (int j = 0; j < m; j++) {
-                average += Array[i][j];
+                average += array[i][j];
             }
         }
         average /= all_size;
 
     }
     
-    private void random_init() {
+    private void Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
-        for (int i = 0; i < Array.Length; i++) {
+        for (int i = 0; i < array.Length; i++) {
             int m = rnd.Next(2,10);
             int[] tmp = new int[m];
             for (int j = 0; j < m; j++) {
                 tmp[j] = rnd.Next(10);
             }
-            Array[i] = tmp;
+            array[i] = tmp;
         }
     }
     
-    public void print() {
+    public void Print() {
         Console.WriteLine("Выводится размеры и элементы ступенчатого массива : ");
-        Console.WriteLine($"{Array.Length} строчек");
-        for (int i = 0; i < Array.Length; i++) {
+        Console.WriteLine($"{array.Length} строчек");
+        for (int i = 0; i < array.Length; i++) {
             Console.Write($"размер {i+1} строчки = ");
-            Console.Write(Array[i].Length);
+            Console.Write(array[i].Length);
             Console.WriteLine();
-            int m = Array[i].Length;
+            int m = array[i].Length;
             for (int j = 0; j < m; j++) {
-                Console.Write($"{Array[i][j]} ");
+                Console.Write($"{array[i][j]} ");
             }
             Console.WriteLine();
         }
@@ -68,11 +68,11 @@ class step_arrays {
         }
     }
     
-    public void change_even_el() {
-        for (int i = 0; i < Array.Length; i++) {
-            for (int j = 0; j < Array[i].Length; j++) {
-                if (Array[i][j] % 2 == 0) {
-                    Array[i][j] = i * j;
+    public void Change_even_el() {
+        for (int i = 0; i < array.Length; i++) {
+            for (int j = 0; j < array[i].Length; j++) {
+                if (array[i][j] % 2 == 0) {
+                    array[i][j] = i * j;
                 }
             }
         }

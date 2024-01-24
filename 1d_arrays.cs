@@ -1,9 +1,9 @@
 using System;
-class d1_arrays {
+class D1_arrays {
     private int[] a;
     private double average;
     
-    public d1_arrays(int size, bool flag) {
+    public D1_arrays(int size, bool flag) {
         a = new int[size];
         if (flag) {
             Console.WriteLine("Введите элементы массива :");
@@ -11,7 +11,7 @@ class d1_arrays {
                 a[i] = int.Parse(Console.ReadLine());
             }
         } else {
-            random_init();
+            Random_init();
         }
 
         double sum = 0;
@@ -21,7 +21,7 @@ class d1_arrays {
         average = sum / a.Length;
     }
     
-    private void random_init() {
+    private void Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
         for (int i = 0; i < a.Length; i++) {
@@ -29,7 +29,7 @@ class d1_arrays {
         }
     }
     
-    public void print() {
+    public void Print() {
         Console.WriteLine("Выводится размер и содержимое массива : ");
         Console.WriteLine(a.Length);
         for (int i = 0; i < a.Length; i++) {
@@ -45,7 +45,7 @@ class d1_arrays {
             return average;
         }
     }
-    public void change() {
+    public void Change() {
         int[] tmp = new int[a.Length];
         int s = 0;
         int j = 0;
@@ -64,7 +64,7 @@ class d1_arrays {
         Console.WriteLine("Новый массив : ");
     }
     
-    public void repeat() {
+    public void Repeat() {
         const int inf = 100000;
         Array.Sort(a);
         int pred = inf;
