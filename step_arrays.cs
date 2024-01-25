@@ -1,38 +1,30 @@
 using System;
 class Step_arrays {
     private int[][] array;
-    private double average;
     
     public Step_arrays(int N, bool flag) {
         array = new int[N][];
         if (flag)
         {
-            for (int i = 0; i < N; i++) {
-                Console.WriteLine($"Введите размер {i + 1} строчки :");
-                int m = int.Parse(Console.ReadLine());
-                int[] tmp = new int[m];
-                Console.WriteLine($"Введите элементы {i + 1} строчки :");
-                for (int j = 0; j < m; j++) {
-                    tmp[j] = int.Parse(Console.ReadLine());;
-                }
-            }
+            _Key_init(N);
         } else 
         {
             _Random_init();
         }
-
-        double all_size = 0;
-        for (int i = 0; i < array.Length; i++) {
-            int m = array[i].Length;
-            all_size += m;
-            for (int j = 0; j < m; j++) {
-                average += array[i][j];
-            }
-        }
-        average /= all_size;
-
     }
     
+    private void _Key_init(int N) {
+        for (int i = 0; i < N; i++) {
+            Console.WriteLine($"Введите размер {i + 1} строчки :");
+            int m = int.Parse(Console.ReadLine());
+            int[] tmp = new int[m];
+            Console.WriteLine($"Введите элементы {i + 1} строчки :");
+            for (int j = 0; j < m; j++) {
+                tmp[j] = int.Parse(Console.ReadLine());;
+            }
+        }
+    }
+
     private void _Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
@@ -64,6 +56,16 @@ class Step_arrays {
     public double Average {
         get
         {
+            double average = 0;
+            double all_size = 0;
+            for (int i = 0; i < array.Length; i++) {
+                int m = array[i].Length;
+                all_size += m;
+                for (int j = 0; j < m; j++) {
+                    average += array[i][j];
+                }
+            }
+            average /= all_size;
             return average;
         }
     }
@@ -72,7 +74,7 @@ class Step_arrays {
         for (int i = 0; i < array.Length; i++) {
             for (int j = 0; j < array[i].Length; j++) {
                 if (array[i][j] % 2 == 0) {
-                    array[i][j] = i * j;
+                    array[i][j] = (i+1) * (j+1);
                 }
             }
         }

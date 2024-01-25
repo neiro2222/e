@@ -46,6 +46,6 @@ class HelloWorld {
   }
 
   private static void Print_init() {
-    Console.WriteLine("Введите false, если хотите случайный ввод, иначе введите truE");
+    Console.WriteLine("Введите false, если хотите случайный ввод, иначе введите true");
   }
 }

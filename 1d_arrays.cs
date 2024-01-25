@@ -1,26 +1,23 @@
 using System;
 class D1_arrays {
     private int[] a;
-    private double average;
     
     public D1_arrays(int size, bool flag) {
         a = new int[size];
         if (flag) {
-            Console.WriteLine("Введите элементы массива :");
-            for (int i = 0; i < a.Length; i++) {
-                a[i] = int.Parse(Console.ReadLine());
-            }
+            _Key_init();
         } else {
             _Random_init();
         }
-
-        double sum = 0;
-        for (int i = 0; i < a.Length; i++) {
-            sum += a[i];
-        }
-        average = sum / a.Length;
     }
     
+    private void _Key_init() {
+        Console.WriteLine("Введите элементы массива :");
+        for (int i = 0; i < a.Length; i++) {
+            a[i] = int.Parse(Console.ReadLine());
+        }
+    }
+
     private void _Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
@@ -42,6 +39,11 @@ class D1_arrays {
     {
         get
         {
+            double average = 0;
+            for (int i = 0; i < a.Length; i++) {
+                average += a[i];
+            }
+            average /= a.Length;
             return average;
         }
     }
