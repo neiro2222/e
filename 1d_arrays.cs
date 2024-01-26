@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel;
 class D1_arrays {
     private int[] a;
     
@@ -47,7 +48,16 @@ class D1_arrays {
             return average;
         }
     }
-    public void Change() {
+
+    public void Change(int new_n, bool flag) {
+        a = new int[new_n];
+        if (flag) {
+            _Key_init();
+        } else {
+            _Random_init();
+        }
+    }
+    public void MORE_THAN_100() {
         int[] tmp = new int[a.Length];
         int s = 0;
         int j = 0;

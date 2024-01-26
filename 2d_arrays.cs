@@ -15,6 +15,18 @@ class D2_arrays {
         }
     }
     
+    public void Change(int new_n, int new_m, bool flag) {
+        n = new_n;
+        m = new_m;
+        array = new int[new_n, new_m];
+        if (flag) 
+        {
+            _Key_init(new_n, new_m);
+        } else {
+            _Random_init(new_n, new_m);
+        }
+    }
+
     private void _Key_init(int n, int m) {
         Console.WriteLine("Введите элементы массива :");
         for (int i = 0; i < n; i++) {

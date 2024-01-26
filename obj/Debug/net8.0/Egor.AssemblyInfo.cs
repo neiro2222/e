@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Egor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad099dbbd750ea0da9be0c24fc98a1eb21d6b06d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+012abfc014321c07febedf7387d228b9a15dae18")]
 [assembly: System.Reflection.AssemblyProductAttribute("Egor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Egor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

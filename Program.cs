@@ -12,7 +12,7 @@ class HelloWorld {
 
     first.Print();
     Console.WriteLine($"Среднее {first.Average}");
-    first.Change();
+    first.MORE_THAN_100();
     first.Print();
     first.Repeat();
     first.Print();

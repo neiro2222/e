@@ -6,15 +6,26 @@ class Step_arrays {
         array = new int[N][];
         if (flag)
         {
-            _Key_init(N);
+            _Key_init();
         } else 
         {
             _Random_init();
         }
     }
     
-    private void _Key_init(int N) {
-        for (int i = 0; i < N; i++) {
+    public void Change(int new_n, bool flag) {
+        array = new int[new_n][];
+        if (flag)
+        {
+            _Key_init();
+        } else 
+        {
+            _Random_init();
+        }
+    }
+
+    private void _Key_init() {
+        for (int i = 0; i < array.Length; i++) {
             Console.WriteLine($"Введите размер {i + 1} строчки :");
             int m = int.Parse(Console.ReadLine());
             int[] tmp = new int[m];
