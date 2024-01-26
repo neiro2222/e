@@ -58,7 +58,7 @@ class D1_arrays {
         }
     }
     
-    public void MORE_THAN_100() {
+    public void More_than_100() {
         int[] tmp = new int[a.Length];
         int s = 0;
         int j = 0;
