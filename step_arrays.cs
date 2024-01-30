@@ -1,30 +1,28 @@
 using System;
-class Step_arrays {
+class Step_arrays : Base_array {
     private int[][] array;
     
-    public Step_arrays(int N, bool flag) {
-        array = new int[N][];
-        if (flag)
-        {
-            _Key_init();
-        } else 
-        {
-            _Random_init();
-        }
+    public Step_arrays(bool flag) {
+        Create_array(flag);
     }
     
-    public void Change(int new_n, bool flag) {
-        array = new int[new_n][];
-        if (flag)
+    public override void Create_array(bool flag) {
+        Console.WriteLine("Введите количество строчек ступенчатого массива : ");
+        int n = int.Parse(Console.ReadLine());
+        array = new int[n][];
+        if (flag) 
         {
             _Key_init();
-        } else 
-        {
+        } else {
             _Random_init();
         }
     }
 
-    private void _Key_init() {
+    public void Change(int new_n, bool flag) {
+        Create_array(flag);
+    }
+
+    protected override void _Key_init() {
         for (int i = 0; i < array.Length; i++) {
             Console.WriteLine($"Введите размер {i + 1} строчки :");
             int m = int.Parse(Console.ReadLine());
@@ -36,7 +34,7 @@ class Step_arrays {
         }
     }
 
-    private void _Random_init() {
+    protected override void _Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
         for (int i = 0; i < array.Length; i++) {
@@ -49,7 +47,7 @@ class Step_arrays {
         }
     }
     
-    public void Print() {
+    public override void Print() {
         Console.WriteLine("Выводится размеры и элементы ступенчатого массива : ");
         Console.WriteLine($"{array.Length} строчек");
         for (int i = 0; i < array.Length; i++) {
@@ -64,9 +62,8 @@ class Step_arrays {
         }
     }
     
-    public double Average {
-        get
-        {
+    public override void Average() {
+
             double average = 0;
             double all_size = 0;
             for (int i = 0; i < array.Length; i++) {
@@ -77,8 +74,7 @@ class Step_arrays {
                 }
             }
             average /= all_size;
-            return average;
-        }
+            Console.WriteLine($"Среднее {average}");
     }
     
     public void Change_even_el() {

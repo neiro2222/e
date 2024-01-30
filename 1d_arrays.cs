@@ -1,10 +1,15 @@
 using System;
-using System.ComponentModel;
-class D1_arrays {
+class D1_arrays : Base_array {
     private int[] a;
     
-    public D1_arrays(int size, bool flag) {
-        a = new int[size];
+    public D1_arrays(bool flag) {
+        Create_array(flag);
+    }
+
+    public override void Create_array(bool flag) {
+        Console.WriteLine("Введите размер массива : ");
+        int n = int.Parse(Console.ReadLine());
+        a = new int[n];
         if (flag) {
             _Key_init();
         } else {
@@ -12,14 +17,18 @@ class D1_arrays {
         }
     }
     
-    private void _Key_init() {
+    public void Change(bool flag) {
+        Create_array(flag);
+    }
+    
+    protected override void _Key_init() {
         Console.WriteLine("Введите элементы массива :");
         for (int i = 0; i < a.Length; i++) {
             a[i] = int.Parse(Console.ReadLine());
         }
     }
 
-    private void _Random_init() {
+    protected override void _Random_init() {
         Console.WriteLine("Массив вводится случайно");
         Random rnd = new Random();
         for (int i = 0; i < a.Length; i++) {
@@ -27,7 +36,7 @@ class D1_arrays {
         }
     }
     
-    public void Print() {
+    public override void Print() {
         Console.WriteLine("Выводится размер и содержимое массива : ");
         Console.WriteLine(a.Length);
         for (int i = 0; i < a.Length; i++) {
@@ -36,26 +45,13 @@ class D1_arrays {
         Console.WriteLine();
     }
     
-    public double Average
-    {
-        get
-        {
-            double average = 0;
-            for (int i = 0; i < a.Length; i++) {
-                average += a[i];
-            }
-            average /= a.Length;
-            return average;
+    public override void Average() {
+        double average = 0;
+        for (int i = 0; i < a.Length; i++) {
+            average += a[i];
         }
-    }
-
-    public void Change(int new_n, bool flag) {
-        a = new int[new_n];
-        if (flag) {
-            _Key_init();
-        } else {
-            _Random_init();
-        }
+        average /= a.Length;
+        Console.WriteLine($"Среднее {average}");
     }
     
     public void More_than_100() {
