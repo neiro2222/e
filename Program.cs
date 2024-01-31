@@ -18,7 +18,6 @@ class HelloWorld {
     base_Array[2]= new Step_arrays(flag);
 
     for (int i = 0; i < base_Array.Length; i++) {
-      base_Array[i].Inf();
       base_Array[i].Print();
       base_Array[i].Average();
     }

@@ -8,7 +8,6 @@ abstract class Base_array
     public abstract void Change(bool flag);
     protected abstract void Create_array(bool flag);
     public abstract void Average();
-    public abstract void Inf();
 
 }
 

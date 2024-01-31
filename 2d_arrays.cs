@@ -72,6 +72,7 @@ sealed class D2_arrays : Base_array {
     }
 
     public override void Print() {
+        Console.WriteLine("Двумерный массив");
         Console.WriteLine("Выводится размеры и содержимое массива : ");
         Console.Write($"{array.GetLength(0)} ");
         Console.Write(array.GetLength(1));
@@ -84,8 +85,6 @@ sealed class D2_arrays : Base_array {
         }
     }
 
-    public override void Inf() {
-        Console.WriteLine("Двумерный массив");
-    }
+
 
 }

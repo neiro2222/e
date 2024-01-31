@@ -38,6 +38,7 @@ sealed class D1_arrays : Base_array {
     }
     
     public override void Print() {
+        Console.WriteLine("Одномерный массив");
         Console.WriteLine("Выводится размер и содержимое массива : ");
         Console.WriteLine(a.Length);
         for (int i = 0; i < a.Length; i++) {
@@ -95,8 +96,5 @@ sealed class D1_arrays : Base_array {
         Console.WriteLine("Новый массив : ");
     }
 
-    public override void Inf() {
-        Console.WriteLine("Одномерный массив");
-    }
 
 }

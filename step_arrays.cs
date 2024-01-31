@@ -49,6 +49,7 @@ sealed class Step_arrays : Base_array {
     }
     
     public override void Print() {
+        Console.WriteLine("Ступенчатый массив");
         Console.WriteLine("Выводится размеры и элементы ступенчатого массива : ");
         Console.WriteLine($"{array.Length} строчек");
         for (int i = 0; i < array.Length; i++) {
@@ -88,8 +89,6 @@ sealed class Step_arrays : Base_array {
         }
     }
 
-    public override void Inf() {
-        Console.WriteLine("Ступенчатый массив");
-    }
+ 
     
 }
