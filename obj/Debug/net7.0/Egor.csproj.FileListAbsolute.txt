@@ -1,0 +1,15 @@
+/workspaces/e/obj/Debug/net7.0/Egor.csproj.AssemblyReference.cache
+/workspaces/e/obj/Debug/net7.0/Egor.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/e/obj/Debug/net7.0/Egor.AssemblyInfoInputs.cache
+/workspaces/e/obj/Debug/net7.0/Egor.AssemblyInfo.cs
+/workspaces/e/obj/Debug/net7.0/Egor.csproj.CoreCompileInputs.cache
+/workspaces/e/bin/Debug/net7.0/Egor
+/workspaces/e/bin/Debug/net7.0/Egor.deps.json
+/workspaces/e/bin/Debug/net7.0/Egor.runtimeconfig.json
+/workspaces/e/bin/Debug/net7.0/Egor.dll
+/workspaces/e/bin/Debug/net7.0/Egor.pdb
+/workspaces/e/obj/Debug/net7.0/Egor.dll
+/workspaces/e/obj/Debug/net7.0/refint/Egor.dll
+/workspaces/e/obj/Debug/net7.0/Egor.pdb
+/workspaces/e/obj/Debug/net7.0/Egor.genruntimeconfig.cache
+/workspaces/e/obj/Debug/net7.0/ref/Egor.dll

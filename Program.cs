@@ -23,7 +23,7 @@ class HelloWorld {
       base_Array[i].Average();
     }
     
-    base_Array[0].Create_array(flag);
+    base_Array[0].Change(flag);
     base_Array[0].Print();
     
   }

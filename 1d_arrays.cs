@@ -6,7 +6,7 @@ sealed class D1_arrays : Base_array {
         Create_array(flag);
     }
 
-    public override void Create_array(bool flag) {
+    private void Create_array(bool flag) {
         Console.WriteLine("Введите размер массива : ");
         int n = int.Parse(Console.ReadLine());
         a = new int[n];
@@ -17,7 +17,8 @@ sealed class D1_arrays : Base_array {
         }
     }
     
-    public void Change(bool flag) {
+    public override void Change(bool flag) {
+        Console.WriteLine("Массив изменен");
         Create_array(flag);
     }
     
