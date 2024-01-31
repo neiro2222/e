@@ -3,46 +3,33 @@ class HelloWorld {
 
   static void Main() {
     
-    Console.WriteLine("Одномерные массивы ");
+    Base_array[] base_Array  = new Base_array[3];
     
     Print_init();
+
 
     bool flag = bool.Parse(Console.ReadLine());
-    D1_arrays first = new D1_arrays(flag);
-
-    first.Print();
-    first.Average();
-    first.More_than_100();
-    first.Print();
-    first.Repeat();
-    first.Print();
     
-    Console.WriteLine("Двумерные массивы ");
-
-    Print_init();
-    
-    bool flag_1 = bool.Parse(Console.ReadLine());
-
-    D2_arrays second = new D2_arrays(flag_1);
-
-    second.Print();
-    second.Average();
-    second.Print_even_strings();
-
+    Console.WriteLine("Одномерные массивы ");
+    base_Array[0] = new D1_arrays(flag);     
+    Console.WriteLine("Двумерные массивы ");   
+    base_Array[1] = new D2_arrays(flag);
     Console.WriteLine("Ступенчатые массивы ");
-    
-    Print_init();
-    
-    bool flag_2 = bool.Parse(Console.ReadLine());
-    Step_arrays third = new Step_arrays(flag_2);
+    base_Array[2]= new Step_arrays(flag);
 
-    third.Print();
-    third.Average();
-    third.Change_even_el();
-    third.Print();
+    for (int i = 0; i < base_Array.Length; i++) {
+      base_Array[i].Inf();
+      base_Array[i].Print();
+      base_Array[i].Average();
+    }
+    
+    base_Array[0].Create_array(flag);
+    base_Array[0].Print();
+    
   }
 
   private static void Print_init() {
     Console.WriteLine("Введите false, если хотите случайный ввод, иначе введите true");
   }
+
 }

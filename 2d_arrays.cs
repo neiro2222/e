@@ -83,4 +83,8 @@ sealed class D2_arrays : Base_array {
         }
     }
 
+    public override void Inf() {
+        Console.WriteLine("Двумерный массив");
+    }
+
 }

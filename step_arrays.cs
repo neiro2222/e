@@ -1,5 +1,5 @@
 using System;
-class Step_arrays : Base_array {
+sealed class Step_arrays : Base_array {
     private int[][] array;
     
     public Step_arrays(bool flag) {
@@ -85,6 +85,10 @@ class Step_arrays : Base_array {
                 }
             }
         }
+    }
+
+    public override void Inf() {
+        Console.WriteLine("Ступенчатый массив");
     }
     
 }

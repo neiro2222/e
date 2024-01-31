@@ -7,7 +7,7 @@ abstract class Base_array
     public abstract void Print();
     public abstract void Create_array(bool flag);
     public abstract void Average();
-
+    public abstract void Inf();
 
 }
 

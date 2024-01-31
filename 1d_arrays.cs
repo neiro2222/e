@@ -1,5 +1,5 @@
 using System;
-class D1_arrays : Base_array {
+sealed class D1_arrays : Base_array {
     private int[] a;
     
     public D1_arrays(bool flag) {
@@ -93,4 +93,9 @@ class D1_arrays : Base_array {
         Console.WriteLine("Удалены повторяющиеся элементы ");
         Console.WriteLine("Новый массив : ");
     }
+
+    public override void Inf() {
+        Console.WriteLine("Одномерный массив");
+    }
+
 }
