@@ -4,7 +4,7 @@ sealed class D2_arrays : Base_array {
     public D2_arrays(bool flag) {
         Create_array(flag);
     }
-    private void Create_array(bool flag) {
+    protected override void Create_array(bool flag) {
         Console.WriteLine("Введите размеры двумерного массива : ");
         int n = int.Parse(Console.ReadLine());
         int m = int.Parse(Console.ReadLine());
